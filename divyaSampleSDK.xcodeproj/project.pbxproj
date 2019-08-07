@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2A9A52B422FA6A0B00FC0799 /* divyaSampleSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9A52B222FA6A0B00FC0799 /* divyaSampleSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A9A52BB22FA6A2F00FC0799 /* SmpleFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A52BA22FA6A2F00FC0799 /* SmpleFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A9A52AF22FA6A0B00FC0799 /* divyaSampleSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = divyaSampleSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9A52B222FA6A0B00FC0799 /* divyaSampleSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = divyaSampleSDK.h; sourceTree = "<group>"; };
 		2A9A52B322FA6A0B00FC0799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A9A52BA22FA6A2F00FC0799 /* SmpleFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmpleFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				2A9A52B222FA6A0B00FC0799 /* divyaSampleSDK.h */,
 				2A9A52B322FA6A0B00FC0799 /* Info.plist */,
+				2A9A52BA22FA6A2F00FC0799 /* SmpleFile.swift */,
 			);
 			path = divyaSampleSDK;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					2A9A52AE22FA6A0B00FC0799 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9A52BB22FA6A2F00FC0799 /* SmpleFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		2A9A52B822FA6A0B00FC0799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.letsservice.divyaSampleSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		2A9A52B922FA6A0B00FC0799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
