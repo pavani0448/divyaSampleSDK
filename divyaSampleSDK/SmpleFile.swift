@@ -19,7 +19,7 @@ public class RandomGenerator {
     }
     public static func integer() -> Int {
         
-        return Int(arc4random())
+        return Int(arc4random()) // gxjha
         
     }
     
